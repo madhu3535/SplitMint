@@ -1,0 +1,177 @@
+.balance-table-container {
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.balance-table-container.light {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.balance-table-container.dark {
+  background-color: #2a2a3e;
+  color: #f0f0f0;
+}
+
+.balance-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.balance-table-wrapper {
+  overflow-x: auto;
+}
+
+.balance-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.balance-table thead {
+  font-weight: 600;
+  border-bottom: 2px solid;
+}
+
+.balance-table-container.light thead {
+  background-color: #e9ecef;
+  border-bottom-color: #dee2e6;
+}
+
+.balance-table-container.dark thead {
+  background-color: #1a1a2e;
+  border-bottom-color: #444;
+}
+
+.balance-table th {
+  padding: 12px 10px;
+  text-align: left;
+}
+
+.balance-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid;
+}
+
+.balance-table-container.light td {
+  border-bottom-color: #dee2e6;
+}
+
+.balance-table-container.dark td {
+  border-bottom-color: #444;
+}
+
+.balance-row {
+  transition: background-color 0.2s;
+}
+
+.balance-row.settled {
+  opacity: 0.7;
+}
+
+.balance-table-container.light .balance-row.owed-to:hover {
+  background-color: #d4edda;
+}
+
+.balance-table-container.light .balance-row.owes:hover {
+  background-color: #f8d7da;
+}
+
+.balance-table-container.dark .balance-row.owed-to:hover {
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+.balance-table-container.dark .balance-row.owes:hover {
+  background-color: rgba(244, 67, 54, 0.1);
+}
+
+.participant-name {
+  font-weight: 500;
+}
+
+.spent-amount,
+.owed-amount {
+  text-align: right;
+}
+
+.net-balance {
+  text-align: right;
+  font-weight: 600;
+}
+
+.balance-value {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.balance-value.credit {
+  color: #28a745;
+  background-color: rgba(40, 167, 69, 0.1);
+}
+
+.balance-value.debit {
+  color: #dc3545;
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+.balance-value.zero {
+  color: #6c757d;
+  background-color: rgba(108, 117, 125, 0.1);
+}
+
+.status {
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-owed-to {
+  color: #28a745;
+  background-color: rgba(40, 167, 69, 0.15);
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.status-owes {
+  color: #dc3545;
+  background-color: rgba(220, 53, 69, 0.15);
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.status-settled {
+  color: #6c757d;
+  background-color: rgba(108, 117, 125, 0.15);
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.balance-loading,
+.balance-error,
+.balance-empty {
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.balance-loading {
+  color: #6c757d;
+}
+
+.balance-error {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+.balance-empty {
+  color: #6c757d;
+  font-style: italic;
+}

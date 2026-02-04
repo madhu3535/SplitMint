@@ -1,0 +1,163 @@
+.settlement-container {
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.settlement-container.light {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.settlement-container.dark {
+  background-color: #2a2a3e;
+  color: #f0f0f0;
+}
+
+.settlement-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.settlement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.settlement-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 6px;
+  border-left: 4px solid #4a90e2;
+}
+
+.settlement-container.light .settlement-item {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+.settlement-container.dark .settlement-item {
+  background-color: #1a1a2e;
+  border: 1px solid #444;
+}
+
+.settlement-arrow {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+}
+
+.settlement-from,
+.settlement-to {
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 4px;
+  min-width: 120px;
+  text-align: center;
+}
+
+.settlement-from {
+  background-color: rgba(244, 67, 54, 0.1);
+  color: #dc3545;
+}
+
+.settlement-to {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #28a745;
+}
+
+.arrow-divider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6c757d;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.arrow-icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+}
+
+.settlement-amount {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #4a90e2;
+  min-width: 120px;
+  text-align: right;
+  padding: 6px 12px;
+  background-color: rgba(74, 144, 226, 0.1);
+  border-radius: 4px;
+}
+
+.settlement-note {
+  margin-top: 15px;
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  text-align: center;
+  border-radius: 4px;
+  font-style: italic;
+}
+
+.settlement-container.light .settlement-note {
+  background-color: #e7f3ff;
+  color: #004085;
+}
+
+.settlement-container.dark .settlement-note {
+  background-color: rgba(74, 144, 226, 0.15);
+  color: #7bb3ff;
+}
+
+.settlement-loading,
+.settlement-error,
+.settlement-empty {
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.settlement-loading {
+  color: #6c757d;
+}
+
+.settlement-error {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+.settlement-empty {
+  color: #28a745;
+  font-weight: 600;
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+@media (max-width: 600px) {
+  .settlement-arrow {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .settlement-from,
+  .settlement-to {
+    min-width: 100px;
+  }
+
+  .settlement-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .settlement-amount {
+    width: 100%;
+  }
+}
